@@ -249,10 +249,18 @@ export const useAccessibility = () => {
   return { isScreenReader };
 };
 
+type ScreenOrientationType = {
+  //** [MDN Reference](https://developer.mozilla.org/docs/Web/API/ScreenOrientation/lock) */
+  lock(orientation: ScreenOrientation): Promise<void>;
+};
 export const useOrientationLock = () => {
-  const lockOrientation = useCallback((orientation: ScreenOrientation) => {
+  const lockOrientation = useCallback((orientation: ScreenOrientationType) => {
     if ("orientation" in screen && "lock" in screen.orientation) {
-      screen.orientation.lock(orientation).catch(() => {
+      (
+        screen.orientation.lock as (
+          orientation: ScreenOrientationType
+        ) => Promise<void>
+      )(orientation).catch(() => {
         console.error("Orientation lock failed");
       });
     }
