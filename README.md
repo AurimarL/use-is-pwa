@@ -20,7 +20,6 @@ A comprehensive collection of React hooks for building Progressive Web Apps (PWA
   - [useOrientationLock](#useorientationlock)
   - [useIsPWA](#useispwa)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
@@ -190,19 +189,3 @@ We welcome contributions to `use-is-pwa`! Please follow these steps:
 5. Submit a pull request
 
 For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
-
-This improved README provides:
-
-1. A clearer introduction to the library's purpose
-2. A more detailed table of contents for easy navigation
-3. Expanded usage examples for each hook
-4. Consistent formatting throughout the document
-5. A more comprehensive contributing section
-6. Proper syntax highlighting for code blocks
-
-The structure is now more organized, making it easier for users to find the information they need quickly. The examples are more detailed, providing a better understanding of how to use each hook in a real-world scenario.
