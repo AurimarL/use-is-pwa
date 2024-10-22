@@ -1,20 +1,20 @@
 {
-  "name": "@use-is-pwa/use-is-pwa",
+  "name": "use-is-pwa",
   "version": "1.0.0",
   "description": "A collection of React hooks for detecting device type, network status, battery status, and more.",
-  "main": "index.js",
-  "module": "index.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
-    "test": "jest",
-    "lint": "eslint ."
+    "build": "bun build index.ts --outdir dist",
+    "test": "bun test", 
+    "lint": "bun lint"
   },
   "devDependencies": {
-    "@types/bun": "latest",
     "@types/react": "^18.3.11",
     "typescript": "^5.0.0",
-    "jest": "^29.0.0",
-    "eslint": "^8.0.0"
+    "bun-types": "^1.1.30" 
   },
   "peerDependencies": {
     "react": "^18.3.1"
@@ -38,5 +38,12 @@
     "type": "git",
     "url": "https://github.com/aurimarl/use-is-pwa.git"
   },
-  "homepage": "https://github.com/aurimarl/use-is-pwa#readme"
+  "homepage": "https://github.com/aurimarl/use-is-pwa#readme",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/sponsors/aurimarl"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }
