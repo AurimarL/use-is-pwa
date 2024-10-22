@@ -10,13 +10,12 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
-    "@repo/use-is-pwa": "workspace:*",
+    "@use-is-pwa/use-is-pwa": "workspace:*",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@use-is-pwa/typescript-config": "workspace:*",
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "eslint": "^8.57.0",

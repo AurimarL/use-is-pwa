@@ -20,10 +20,7 @@ importers:
 
   examples/vite:
     dependencies:
-      '@repo/ui':
-        specifier: workspace:*
-        version: link:../../packages/ui
-      '@repo/use-is-pwa':
+      '@use-is-pwa/use-is-pwa':
         specifier: workspace:*
         version: link:../../packages/lib
       react:
@@ -33,15 +30,15 @@ importers:
         specifier: ^18.3.1
         version: 18.3.1(react@18.3.1)
     devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../../packages/typescript-config
       '@types/react':
         specifier: ^18.3.11
         version: 18.3.11
       '@types/react-dom':
         specifier: ^18.3.1
         version: 18.3.1
+      '@use-is-pwa/typescript-config':
+        specifier: workspace:*
+        version: link:../../packages/typescript-config
       eslint:
         specifier: ^8.57.0
         version: 8.57.0
@@ -75,18 +72,6 @@ importers:
         version: 5.3.3
 
   packages/typescript-config: {}
-
-  packages/ui:
-    devDependencies:
-      '@repo/typescript-config':
-        specifier: workspace:*
-        version: link:../typescript-config
-      eslint:
-        specifier: ^8.57.0
-        version: 8.57.0
-      typescript:
-        specifier: ^5.3.3
-        version: 5.3.3
 
 packages:
 

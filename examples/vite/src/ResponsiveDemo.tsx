@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { useIsMobile } from "@repo/use-is-pwa";
+import { useIsMobile } from "@use-is-pwa/use-is-pwa";
 
 export default function ResponsiveDemo() {
   const { isMobile, width } = useIsMobile({});

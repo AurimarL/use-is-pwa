@@ -1,5 +1,5 @@
 {
-  "name": "@repo/use-is-pwa",
+  "name": "@use-is-pwa/use-is-pwa",
   "version": "1.0.0",
   "description": "A collection of React hooks for detecting device type, network status, battery status, and more.",
   "main": "index.js",
