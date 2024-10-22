@@ -1,6 +1,6 @@
 {
   "name": "use-is-pwa",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of React hooks for detecting device type, network status, battery status, and more.",
   "main": "dist/index.js",
   "module": "dist/index.js",
